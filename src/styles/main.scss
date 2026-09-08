@@ -152,12 +152,12 @@ a {
       color: #ffffff;
       box-shadow: 0 15px 28px rgba(236, 101, 30, 0.2);
     }
-    
+
     &--secondary {
-    border: 1px solid rgba(145, 111, 83, 0.22);
-    background: rgba(255, 250, 241, 0.72);
-    color: #2d1f18;
-  }
+      border: 1px solid rgba(145, 111, 83, 0.22);
+      background: rgba(255, 250, 241, 0.72);
+      color: #2d1f18;
+    }
   }
 
   &__stats {
@@ -178,12 +178,12 @@ a {
     color: #8b7466;
     font-size: 14px;
     line-height: 1.2;
-     strong {
-  color: #f27400;
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 1;
-}
+    strong {
+      color: #f27400;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1;
+    }
   }
 }
 
@@ -191,18 +191,18 @@ a {
   .hero {
     min-height: calc(100vh - 62px);
     padding: 70px 20px 58px;
-    
+
     &__title {
-    font-size: 54px;
-  }
-  
-  &__text {
-    font-size: 18px;
-  }
-  
-  &__stats {
-    gap: 36px;
-  }
+      font-size: 54px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__stats {
+      gap: 36px;
+    }
   }
 }
 
@@ -246,55 +246,57 @@ a {
   }
 }
 
-
-
 // Top Ten
 .top-ten {
   padding: 124px 0 128px;
   background:
-    linear-gradient(115deg, rgba(218, 248, 241, 0.58) 0%, rgba(218, 248, 241, 0) 24%),
+    linear-gradient(
+      115deg,
+      rgba(218, 248, 241, 0.58) 0%,
+      rgba(218, 248, 241, 0) 24%
+    ),
     #fbf7ef;
-}
 
-.top-ten__container {
-  width: min(100% - 40px, 1200px);
-  margin: 0 auto;
-}
+  &__container {
+    width: min(100% - 40px, 1200px);
+    margin: 0 auto;
+  }
 
-.top-ten__head {
-  max-width: 650px;
-  margin-bottom: 57px;
-}
+  &__head {
+    max-width: 650px;
+    margin-bottom: 57px;
+  }
 
-.top-ten__eyebrow {
-  margin-bottom: 17px;
-  color: #f46e00;
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 0;
-}
+  &__eyebrow {
+    margin-bottom: 17px;
+    color: #f46e00;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0;
+  }
 
-.top-ten__title {
-  max-width: 610px;
-  color: #2d1d14;
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 1.08;
-}
+  &__title {
+    max-width: 610px;
+    color: #2d1d14;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.08;
+  }
 
-.top-ten__text {
-  max-width: 660px;
-  margin-top: 24px;
-  color: #8a7264;
-  font-size: 17px;
-  line-height: 1.55;
-}
+  &__text {
+    max-width: 660px;
+    margin-top: 24px;
+    color: #8a7264;
+    font-size: 17px;
+    line-height: 1.55;
+  }
 
-.top-ten__grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+  }
 }
 
 .travel-card {
@@ -303,79 +305,220 @@ a {
   border-radius: 22px;
   background: rgba(255, 255, 253, 0.93);
   box-shadow: 0 18px 36px rgba(49, 31, 19, 0.06);
-}
 
-.travel-card__image {
-  position: relative;
-  height: 280px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  &__image {
+    position: relative;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-.travel-card__image--peru {
-  background-image: url("../assets/travels/Peru.jpg");
-}
+    &--peru {
+      background-image: url("../assets/travels/Peru.jpg");
+    }
 
-.travel-card__image--greece {
-  background-image: url("../assets/travels/greece.jpg");
-}
+    &--greece {
+      background-image: url("../assets/travels/greece.jpg");
+    }
 
-.travel-card__image--japan {
-  background-image: url("../assets/travels/Japan.jpg");
-}
+    &--japan {
+      background-image: url("../assets/travels/Japan.jpg");
+    }
 
-.travel-card__image--tanzania {
-  background-image: url("../assets/travels/Tanzania.jpg");
-}
+    &--tanzania {
+      background-image: url("../assets/travels/Tanzania.jpg");
+    }
 
-.travel-card__image--usa {
-  background-image: url("../assets/travels/USA.jpg");
-}
+    &--usa {
+      background-image: url("../assets/travels/USA.jpg");
+    }
 
-.travel-card__image--jordan {
-  background-image: url("../assets/travels/Urdunn.jpg");
-}
+    &--jordan {
+      background-image: url("../assets/travels/Jordan.jpg");
+    }
 
-.travel-card__image--indonesia {
-  background-image: url("../assets/travels/Indonesia.jpg");
-}
+    &--indonesia {
+      background-image: url("../assets/travels/Indonesia.jpg");
+    }
 
-.travel-card__image--portugal {
-  background-image: url("../assets/travels/Portugal.jpg");
-}
+    &--portugal {
+      background-image: url("../assets/travels/Portugal.jpg");
+    }
 
-.travel-card__content {
-  padding: 27px 25px 25px;
-}
+    &--iceland {
+      background-image: url("../assets/travels/Iceland.jpg");
+    }
 
-.travel-card__title {
-  color: #2d1d14;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 1.18;
-}
+    &--bolivia {
+      background-image: url("../assets/travels/Bolivia.jpg");
+    }
+  }
 
-.travel-card__description {
-  margin-top: 17px;
-  color: #8a7264;
-  font-size: 16px;
-  line-height: 1.62;
-}
+  &__content {
+    padding: 27px 25px 25px;
+  }
 
-.travel-card__tags {
-  margin-top: 17px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  &__title {
+    color: #2d1d14;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.18;
+  }
 
-  span {
-    padding: 8px 13px;
-    border-radius: 999px;
-    background: #ffe0ad;
-    color: #6a3a18;
-    font-size: 12px;
+  &__description {
+    margin-top: 17px;
+    color: #8a7264;
+    font-size: 16px;
+    line-height: 1.62;
+  }
+
+  &__tags {
+    margin-top: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    span {
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: #ffe0ad;
+      color: #6a3a18;
+      font-size: 12px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 18px;
+    border-radius: 50%;
+    background: #ef6c00;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
     line-height: 1;
-    white-space: nowrap;
+  }
+
+  &__country {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.82);
+    color: #2d1d14;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+// Rules
+.rules {
+  padding: 126px 0 88px;
+  background:
+    radial-gradient(
+      circle at 16% 86%,
+      rgba(255, 214, 117, 0.28) 0%,
+      rgba(255, 214, 117, 0) 34%
+    ),
+    #fbf6ec;
+
+  &__container {
+    width: min(100% - 40px, 1200px);
+    margin: 0 auto;
+  }
+
+  &__head {
+    max-width: 610px;
+  }
+
+  &__eyebrow {
+    margin-bottom: 18px;
+    color: #f46e00;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 2.8px;
+  }
+
+  &__title {
+    color: #2d1d14;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  &__grid {
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+.rule-card {
+  min-height: 220px;
+  padding: 29px 28px;
+  border: 1px solid #eadac5;
+  border-radius: 18px;
+  background: rgba(255, 255, 253, 0.94);
+  box-shadow: 0 18px 36px rgba(49, 31, 19, 0.06);
+
+  &__title {
+    color: #2d1d14;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.45;
+  }
+
+  &__text {
+    margin-top: 11px;
+    color: #8a7264;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 900px) {
+  .rules {
+    padding: 88px 0 76px;
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .rule-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .rules {
+    padding: 68px 0 62px;
+
+    &__container {
+      width: min(100% - 28px, 1200px);
+    }
+
+    &__title {
+      font-size: 34px;
+    }
+
+    &__grid {
+      margin-top: 36px;
+    }
+  }
+
+  .rule-card {
+    padding: 25px 22px;
   }
 }
