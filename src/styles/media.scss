@@ -1,0 +1,110 @@
+@media (max-width: 900px) {
+  .hero {
+    min-height: calc(100vh - 62px);
+    padding: 70px 20px 58px;
+
+    &__title {
+      font-size: 54px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__stats {
+      gap: 36px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header__container {
+    width: min(100% - 28px, 1200px);
+  }
+
+  .header__nav {
+    gap: 18px;
+  }
+
+  .hero {
+    padding: 54px 16px 46px;
+    &__badge {
+      margin-bottom: 24px;
+      font-size: 12px;
+    }
+    &__title {
+      font-size: 40px;
+      span {
+        margin-top: 9px;
+      }
+    }
+    &__text {
+      margin-top: 24px;
+      font-size: 16px;
+    }
+    &__actions {
+      flex-direction: column;
+    }
+    &__button {
+      width: min(100%, 280px);
+    }
+    &__stats {
+      margin-top: 48px;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .rules {
+    padding: 88px 0 76px;
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .rule-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .rules {
+    padding: 68px 0 62px;
+
+    &__container {
+      width: min(100% - 28px, 1200px);
+    }
+
+    &__title {
+      font-size: 34px;
+    }
+
+    &__grid {
+      margin-top: 36px;
+    }
+  }
+
+  .rule-card {
+    padding: 25px 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 36px 0;
+
+    &__container {
+      width: min(100% - 28px, 1200px);
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

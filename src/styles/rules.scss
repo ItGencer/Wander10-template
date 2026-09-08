@@ -1,0 +1,66 @@
+@use "./params" as *;
+
+.rules {
+  padding: 126px 0 88px;
+  background:
+    linear-gradient(115deg, #daf8f194 0%, #daf8f100 24%), $color-white-light;
+
+  &__container {
+    width: min(100% - 40px, 1200px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__head {
+    max-width: 610px;
+  }
+
+  &__eyebrow {
+    margin-bottom: 18px;
+    color: $color-orenge;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 2.8px;
+  }
+
+  &__title {
+    color: $color-brown;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  &__grid {
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+.rule-card {
+  min-height: 220px;
+  padding: 29px 28px;
+  border: 1px solid $color-white-light;
+  border-radius: 18px;
+  background: $color-white-light;
+  box-shadow: 0 18px 36px #311f130f;
+
+  &__title {
+    color: $color-brown;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.45;
+  }
+
+  &__text {
+    margin-top: 11px;
+    color: $color-brown;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}

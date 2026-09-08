@@ -1,0 +1,126 @@
+@use "./params" as *;
+
+.hero {
+  min-height: calc(100vh - 62px);
+  padding: 86px 20px 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(180deg, #f8f4eb9e, #f8f4ebc7),
+    linear-gradient(90deg, #fff5e05c, #f5fcfd7a),
+    url("../assets/hero.jpg") center / cover no-repeat;
+
+  &__content {
+    width: min(100%, 860px);
+    text-align: center;
+  }
+
+  &__badge {
+    width: fit-content;
+    margin: 0 auto 30px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: $color-white-light;
+    color: $color-brown;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  &__title {
+    color: #2e1d13;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 0.98;
+
+    span {
+      display: block;
+      margin-top: 13px;
+      background: linear-gradient(
+        90deg,
+        $color-orenge 8%,
+        $color-orenge-light 44%,
+        #f16979 94%
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__text {
+    max-width: 690px;
+    margin: 32px auto 0;
+    color: $color-brown;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  &__actions {
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__button {
+    min-width: 192px;
+    min-height: 56px;
+    padding: 0 26px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &--primary {
+      background: linear-gradient(90deg, $color-orenge-light, $color-orenge);
+      color: #fff;
+      box-shadow: 0 15px 28px $color-brown;
+    }
+
+    &--secondary {
+      border: 1px solid #916f5338;
+      background: $color-white-light;
+      color: $color-brown;
+    }
+  }
+
+  &__stats {
+    margin: 70px auto 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 76px;
+    list-style: none;
+  }
+
+  &__stat {
+    min-width: 118px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: $color-brown;
+    font-size: 14px;
+    line-height: 1.2;
+    strong {
+      color: $color-orenge;
+      font-size: 32px;
+      font-weight: 900;
+      line-height: 1;
+    }
+  }
+}

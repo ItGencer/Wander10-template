@@ -1,0 +1,172 @@
+@use "./params" as *;
+
+.top-ten {
+  padding: 124px 0 0;
+  background:
+    linear-gradient(115deg, #daf8f194 0%, #daf8f100 24%), $color-white-light;
+
+  &__container {
+    width: min(100% - 40px, 1200px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__head {
+    max-width: 650px;
+    margin-bottom: 57px;
+  }
+
+  &__eyebrow {
+    margin-bottom: 17px;
+    color: $color-orenge;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  &__title {
+    max-width: 610px;
+    color: $color-brown;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.08;
+  }
+
+  &__text {
+    max-width: 660px;
+    margin-top: 24px;
+    color: $color-brown;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+  }
+}
+
+.travel-card {
+  overflow: hidden;
+  border: 1px solid $color-white-light;
+  border-radius: 22px;
+  background: $color-white-light;
+  box-shadow: 0 18px 36px #e9952447;
+  padding: 24px;
+
+  &__image {
+    position: relative;
+    margin-bottom: 10px;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--peru {
+      background-image: url("../assets/travels/Peru.jpg");
+    }
+
+    &--greece {
+      background-image: url("../assets/travels/greece.jpg");
+    }
+
+    &--japan {
+      background-image: url("../assets/travels/Japan.jpg");
+    }
+
+    &--tanzania {
+      background-image: url("../assets/travels/Tanzania.jpg");
+    }
+
+    &--usa {
+      background-image: url("../assets/travels/USA.jpg");
+    }
+
+    &--jordan {
+      background-image: url("../assets/travels/Jordan.jpg");
+    }
+
+    &--indonesia {
+      background-image: url("../assets/travels/Indonesia.jpg");
+    }
+
+    &--portugal {
+      background-image: url("../assets/travels/Portugal.jpg");
+    }
+
+    &--iceland {
+      background-image: url("../assets/travels/Iceland.jpg");
+    }
+
+    &--bolivia {
+      background-image: url("../assets/travels/Bolivia.jpg");
+    }
+  }
+
+  &__content {
+    padding: 27px 25px 25px;
+  }
+
+  &__title {
+    color: $color-brown;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.18;
+  }
+
+  &__description {
+    margin-top: 17px;
+    color: $color-brown;
+    font-size: 16px;
+    line-height: 1.62;
+  }
+
+  &__list {
+    margin-top: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+
+    li {
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgb(255, 231, 195);
+      color: rgb(97, 45, 3);
+      font-size: 12px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 18px;
+    border-radius: 50%;
+    background: $color-orenge;
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__country {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: $color-white-light;
+    color: $color-brown;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
